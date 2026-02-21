@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'AP2',
-  tagline: 'AP2 Exam Notes',
+  tagline: 'AP2-Prüfungsvorbereitung',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -34,8 +34,8 @@ const config: Config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'de',
+    locales: ['de'],
   },
 
   presets: [
@@ -74,7 +74,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Exam Notes',
+          label: 'Prüfungsthemen',
         },
         {
           href: 'https://github.com/serhii23korol/learning-docusaurus',
@@ -90,7 +90,7 @@ const config: Config = {
           title: 'Knowledge Base',
           items: [
             {
-              label: 'AP2 Exam Notes',
+              label: 'AP2 Prüfungsthemen',
               to: '/docs/intro',
             },
           ],
