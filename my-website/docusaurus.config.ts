@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'SEKO',
-  tagline: 'Dinosaurs are cool',
+  title: 'AP2',
+  tagline: 'AP2 Exam Notes',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -15,17 +15,20 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://serhii23korol.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'serhii23korol', // Usually your GitHub org/user name.
+  projectName: 'learning-docusaurus', // Usually your repo name.
+  deploymentBranch: 'gh-pages',
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -44,23 +47,9 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/serhii23korol',
+            'https://github.com/serhii23korol/learning-docusaurus',
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/serhii23korol',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        blog: false, // Disable the blog plugin
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -75,9 +64,9 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'SEKO',
+      title: 'DocuSauru',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'DocuSauru Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -85,11 +74,10 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Exam Notes',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/serhii23korol',
+          href: 'https://github.com/serhii23korol/learning-docusaurus',
           label: 'GitHub',
           position: 'right',
         },
@@ -99,46 +87,24 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Knowledge Base',
           items: [
             {
-              label: 'Tutorial',
+              label: 'AP2 Exam Notes',
               to: '/docs/intro',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'Social',
           items: [
-            {
-              label: 'LinkedIn',
-              href: 'https://www.linkedin.com/in/serhii23korol',
-            },
-            {
-              label: 'Instagram',
-              href: 'https://www.instagram.com/0123seko',
-            },
-            {
-              label: 'Substack',
-              href: 'https://substack.com/@serhii23korol',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/serhii23korol',
-            },
+            { label: 'LinkedIn', href: 'https://www.linkedin.com/in/serhii23korol' },
+            { label: 'Substack', href: 'https://substack.com/@serhii23korol' },
+            { label: 'GitHub', href: 'https://github.com/serhii23korol' },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} DocuSauru. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
