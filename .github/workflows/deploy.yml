@@ -9,6 +9,8 @@ jobs:
   deploy:
     name: Deploy to GitHub Pages
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # needed for gh-pages action to push to the repo
     steps:
       - uses: actions/checkout@v4
         with:
