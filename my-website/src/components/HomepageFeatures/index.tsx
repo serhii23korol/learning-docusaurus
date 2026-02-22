@@ -11,32 +11,32 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'AP2 Exam Prep',
+    title: 'AP2-Prüfungsvorbereitung',
     emoji: '📚',
     description: (
       <>
-        A centralized knowledge base for <b>Fachinformatiker Anwendungsentwicklung</b> exam topics. 
-        From IT-Security to Agile workflows, all notes are kept in one place.
+        Eine zentrale Wissensdatenbank für Themen der <b>Fachinformatiker Anwendungsentwicklung</b> Prüfung.
+        Von IT-Sicherheit bis Agile-Methoden – alle Notizen an einem Ort.
       </>
     ),
   },
   {
-    title: 'Searchable Docs',
+    title: 'Durchsuchbare Dokumentation',
     emoji: '🔍',
     description: (
       <>
-        Built with a local search index to find definitions, diagrams, and 
-        code snippets instantly.
+        Mit einem lokalen Suchindex ausgestattet, um Definitionen, Diagramme und
+        Code-Snippets sofort zu finden.
       </>
     ),
   },
   {
-    title: 'Learning by Building',
+    title: 'Lernen durch Bauen',
     emoji: '🏗️',
     description: (
       <>
-        The "Docusauru" sandbox: experimenting with <b>Markdown-as-Code</b>, 
-        and automated GitHub Pages deployment.
+        Experimentieren mit <b>Docusaurus</b> und 
+        automatisiertem GitHub Pages Deployment.
       </>
     ),
   },
