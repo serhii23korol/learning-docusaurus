@@ -29,6 +29,15 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
+      label: 'Softwareentwicklung',
+      items: [
+        'software-development/software-types',
+        'software-development/development-implementation-automation',
+        'software-development/technical-legal-conditions',
+      ],
+    },
+    {
+      type: 'category',
       label: 'OOP Programmierung',
       items: [
         'oop-programming/oop-intro',
@@ -48,6 +57,10 @@ const sidebars: SidebarsConfig = {
       label: 'IT-Sicherheit',
       items: [
         'it-security/encryption',
+        'it-security/iam',
+        'it-security/network-security',
+        'it-security/application-security',
+        'it-security/risk-management',
       ],
     },
     {
