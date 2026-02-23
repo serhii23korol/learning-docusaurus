@@ -22,25 +22,20 @@ const sidebars: SidebarsConfig = {
     'deployment',
     {
       type: 'category',
-      label: 'Projektmanagement',
-      items: [
-        'project-management/agile-software-development',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'OOP Programmierung',
-      items: [
-        'oop-programming/oop-intro',
-      ],
-    },
-    {
-      type: 'category',
       label: 'Algorithmen',
       items: [
-        'algorithms/algorithms-intro',
-        'algorithms/sorting-algorithms',
-        'algorithms/searching-algorithms',
+        'algorithms/fundamentals-of-algorithms',
+        'algorithms/basic-algorithms',
+        'algorithms/algorithmic-problem-solving',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Softwareentwicklung',
+      items: [
+        'software-development/software-types',
+        'software-development/development-implementation-automation',
+        'software-development/technical-legal-conditions',
       ],
     },
     {
@@ -48,14 +43,10 @@ const sidebars: SidebarsConfig = {
       label: 'IT-Sicherheit',
       items: [
         'it-security/encryption',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Designpatterns',
-      items: [
-        'design-patterns/factory-pattern',
-        'design-patterns/singleton-pattern',
+        'it-security/iam',
+        'it-security/network-security',
+        'it-security/application-security',
+        'it-security/risk-management',
       ],
     },
   ],
